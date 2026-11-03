@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLoop | Everyday Organizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2 class="logo">LifeLoop.</h2>
+
+            <p class="menu-title">MENU</p>
+
+            <nav>
+                <a href="#" class="active">🏠 Dashboard</a>
+                <a href="#tasks">📝 My Tasks</a>
+                <a href="#shopping">🛍️ Shopping List</a>
+                <a href="#goals">🎯 My Goals</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Your day, your way. 💜</p>
+            </div>
+
+        </aside>
+
+        <!-- Main content -->
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <p class="small-text">YOUR PERSONAL SPACE</p>
+                    <h1>Good day! ✨</h1>
+                    <p>Let's make today productive.</p>
+                </div>
+
+                <div class="profile">LL</div>
+            </header>
+
+            <!-- Summary cards -->
+            <section class="summary">
+
+                <div class="summary-card">
+                    <p>Total Tasks</p>
+                    <h2 id="totalTasks">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <p>Completed</p>
+                    <h2 id="completedTasks">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <p>Pending</p>
+                    <h2 id="pendingTasks">0</h2>
+                </div>
+
+            </section>
+
+            <!-- Task management -->
+            <section class="panel" id="tasks">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>My Daily Tasks</h2>
+                        <p>Organize your everyday activities.</p>
+                    </div>
+                </div>
+
+                <div class="task-form">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to do?"
+                    >
+
+                    <select id="categoryInput">
+                        <option value="Personal">Personal</option>
+                        <option value="Study">Study</option>
+                        <option value="Work">Work</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <button id="addTaskBtn">+ Add Task</button>
+
+                </div>
+
+                <div class="filters">
+                    <button class="filter active" data-filter="All">All</button>
+                    <button class="filter" data-filter="Pending">Pending</button>
+                    <button class="filter" data-filter="Completed">Completed</button>
+                </div>
+
+                <ul id="taskList" class="task-list"></ul>
+
+                <p id="emptyMessage">No tasks yet. Add your first task! 🌱</p>
+
+            </section>
+
+            <!-- Coming soon sections -->
+            <section class="extra-sections">
+
+                <div class="panel" id="shopping">
+                    <h2>🛍️ Shopping List</h2>
+                    <p>Keep your shopping items organized.</p>
+                    <span class="coming-soon">Coming in Phase 2</span>
+                </div>
+
+                <div class="panel" id="goals">
+                    <h2>🎯 My Goals</h2>
+                    <p>Small steps lead to big achievements.</p>
+                    <span class="coming-soon">Coming in Phase 2</span>
+                </div>
+
+            </section>
+
+            <footer>
+                Made with 💜 | LifeLoop 2026
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
